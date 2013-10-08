@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DB0D70117EFB8B90063436F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB0D70017EFB8B90063436F /* Foundation.framework */; };
+		5DB0D70317EFB8B90063436F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB0D70217EFB8B90063436F /* CoreGraphics.framework */; };
+		5DB0D70517EFB8B90063436F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB0D70417EFB8B90063436F /* UIKit.framework */; };
+		5DB0D70B17EFB8B90063436F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DB0D70917EFB8B90063436F /* InfoPlist.strings */; };
+		5DB0D70D17EFB8B90063436F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB0D70C17EFB8B90063436F /* main.m */; };
+		5DB0D71117EFB8B90063436F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB0D71017EFB8B90063436F /* AppDelegate.m */; };
+		5DB0D71417EFB8B90063436F /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DB0D71217EFB8B90063436F /* Main_iPhone.storyboard */; };
+		5DB0D71717EFB8B90063436F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DB0D71517EFB8B90063436F /* Main_iPad.storyboard */; };
+		5DB0D71A17EFB8B90063436F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB0D71917EFB8B90063436F /* ViewController.m */; };
+		5DB0D71C17EFB8B90063436F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DB0D71B17EFB8B90063436F /* Images.xcassets */; };
+		5DB0D72317EFB8B90063436F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB0D72217EFB8B90063436F /* XCTest.framework */; };
+		5DB0D72417EFB8B90063436F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB0D70017EFB8B90063436F /* Foundation.framework */; };
+		5DB0D72517EFB8B90063436F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB0D70417EFB8B90063436F /* UIKit.framework */; };
+		5DB0D72D17EFB8B90063436F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DB0D72B17EFB8B90063436F /* InfoPlist.strings */; };
+		5DB0D72F17EFB8B90063436F /* CarValetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB0D72E17EFB8B90063436F /* CarValetTests.m */; };
+		5DB0D73A17EFB9730063436F /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB0D73917EFB9730063436F /* Car.m */; };
+		5DB0D73D17EFC0CB0063436F /* HybridCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB0D73C17EFC0CB0063436F /* HybridCar.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DB0D72617EFB8B90063436F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DB0D6F517EFB8B90063436F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DB0D6FC17EFB8B90063436F;
+			remoteInfo = CarValet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5DB0D6FD17EFB8B90063436F /* CarValet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarValet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DB0D70017EFB8B90063436F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5DB0D70217EFB8B90063436F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5DB0D70417EFB8B90063436F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5DB0D70817EFB8B90063436F /* CarValet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CarValet-Info.plist"; sourceTree = "<group>"; };
+		5DB0D70A17EFB8B90063436F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5DB0D70C17EFB8B90063436F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5DB0D70E17EFB8B90063436F /* CarValet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CarValet-Prefix.pch"; sourceTree = "<group>"; };
+		5DB0D70F17EFB8B90063436F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5DB0D71017EFB8B90063436F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5DB0D71317EFB8B90063436F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		5DB0D71617EFB8B90063436F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		5DB0D71817EFB8B90063436F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5DB0D71917EFB8B90063436F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5DB0D71B17EFB8B90063436F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5DB0D72117EFB8B90063436F /* CarValetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarValetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DB0D72217EFB8B90063436F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5DB0D72A17EFB8B90063436F /* CarValetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CarValetTests-Info.plist"; sourceTree = "<group>"; };
+		5DB0D72C17EFB8B90063436F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5DB0D72E17EFB8B90063436F /* CarValetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarValetTests.m; sourceTree = "<group>"; };
+		5DB0D73817EFB9730063436F /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		5DB0D73917EFB9730063436F /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		5DB0D73B17EFC0CB0063436F /* HybridCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HybridCar.h; sourceTree = "<group>"; };
+		5DB0D73C17EFC0CB0063436F /* HybridCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HybridCar.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DB0D6FA17EFB8B90063436F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DB0D70317EFB8B90063436F /* CoreGraphics.framework in Frameworks */,
+				5DB0D70517EFB8B90063436F /* UIKit.framework in Frameworks */,
+				5DB0D70117EFB8B90063436F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DB0D71E17EFB8B90063436F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DB0D72317EFB8B90063436F /* XCTest.framework in Frameworks */,
+				5DB0D72517EFB8B90063436F /* UIKit.framework in Frameworks */,
+				5DB0D72417EFB8B90063436F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DB0D6F417EFB8B90063436F = {
+			isa = PBXGroup;
+			children = (
+				5DB0D70617EFB8B90063436F /* CarValet */,
+				5DB0D72817EFB8B90063436F /* CarValetTests */,
+				5DB0D6FF17EFB8B90063436F /* Frameworks */,
+				5DB0D6FE17EFB8B90063436F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DB0D6FE17EFB8B90063436F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DB0D6FD17EFB8B90063436F /* CarValet.app */,
+				5DB0D72117EFB8B90063436F /* CarValetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DB0D6FF17EFB8B90063436F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DB0D70017EFB8B90063436F /* Foundation.framework */,
+				5DB0D70217EFB8B90063436F /* CoreGraphics.framework */,
+				5DB0D70417EFB8B90063436F /* UIKit.framework */,
+				5DB0D72217EFB8B90063436F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DB0D70617EFB8B90063436F /* CarValet */ = {
+			isa = PBXGroup;
+			children = (
+				5DB0D70F17EFB8B90063436F /* AppDelegate.h */,
+				5DB0D71017EFB8B90063436F /* AppDelegate.m */,
+				5DB0D71217EFB8B90063436F /* Main_iPhone.storyboard */,
+				5DB0D71517EFB8B90063436F /* Main_iPad.storyboard */,
+				5DB0D71817EFB8B90063436F /* ViewController.h */,
+				5DB0D71917EFB8B90063436F /* ViewController.m */,
+				5DB0D71B17EFB8B90063436F /* Images.xcassets */,
+				5DB0D70717EFB8B90063436F /* Supporting Files */,
+				5DB0D73817EFB9730063436F /* Car.h */,
+				5DB0D73917EFB9730063436F /* Car.m */,
+				5DB0D73B17EFC0CB0063436F /* HybridCar.h */,
+				5DB0D73C17EFC0CB0063436F /* HybridCar.m */,
+			);
+			path = CarValet;
+			sourceTree = "<group>";
+		};
+		5DB0D70717EFB8B90063436F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DB0D70817EFB8B90063436F /* CarValet-Info.plist */,
+				5DB0D70917EFB8B90063436F /* InfoPlist.strings */,
+				5DB0D70C17EFB8B90063436F /* main.m */,
+				5DB0D70E17EFB8B90063436F /* CarValet-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5DB0D72817EFB8B90063436F /* CarValetTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DB0D72E17EFB8B90063436F /* CarValetTests.m */,
+				5DB0D72917EFB8B90063436F /* Supporting Files */,
+			);
+			path = CarValetTests;
+			sourceTree = "<group>";
+		};
+		5DB0D72917EFB8B90063436F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DB0D72A17EFB8B90063436F /* CarValetTests-Info.plist */,
+				5DB0D72B17EFB8B90063436F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DB0D6FC17EFB8B90063436F /* CarValet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DB0D73217EFB8B90063436F /* Build configuration list for PBXNativeTarget "CarValet" */;
+			buildPhases = (
+				5DB0D6F917EFB8B90063436F /* Sources */,
+				5DB0D6FA17EFB8B90063436F /* Frameworks */,
+				5DB0D6FB17EFB8B90063436F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarValet;
+			productName = CarValet;
+			productReference = 5DB0D6FD17EFB8B90063436F /* CarValet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5DB0D72017EFB8B90063436F /* CarValetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DB0D73517EFB8B90063436F /* Build configuration list for PBXNativeTarget "CarValetTests" */;
+			buildPhases = (
+				5DB0D71D17EFB8B90063436F /* Sources */,
+				5DB0D71E17EFB8B90063436F /* Frameworks */,
+				5DB0D71F17EFB8B90063436F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DB0D72717EFB8B90063436F /* PBXTargetDependency */,
+			);
+			name = CarValetTests;
+			productName = CarValetTests;
+			productReference = 5DB0D72117EFB8B90063436F /* CarValetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DB0D6F517EFB8B90063436F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Learning iOS Development";
+				TargetAttributes = {
+					5DB0D72017EFB8B90063436F = {
+						TestTargetID = 5DB0D6FC17EFB8B90063436F;
+					};
+				};
+			};
+			buildConfigurationList = 5DB0D6F817EFB8B90063436F /* Build configuration list for PBXProject "CarValet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DB0D6F417EFB8B90063436F;
+			productRefGroup = 5DB0D6FE17EFB8B90063436F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DB0D6FC17EFB8B90063436F /* CarValet */,
+				5DB0D72017EFB8B90063436F /* CarValetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DB0D6FB17EFB8B90063436F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DB0D71717EFB8B90063436F /* Main_iPad.storyboard in Resources */,
+				5DB0D71C17EFB8B90063436F /* Images.xcassets in Resources */,
+				5DB0D71417EFB8B90063436F /* Main_iPhone.storyboard in Resources */,
+				5DB0D70B17EFB8B90063436F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DB0D71F17EFB8B90063436F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DB0D72D17EFB8B90063436F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DB0D6F917EFB8B90063436F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DB0D71A17EFB8B90063436F /* ViewController.m in Sources */,
+				5DB0D71117EFB8B90063436F /* AppDelegate.m in Sources */,
+				5DB0D73A17EFB9730063436F /* Car.m in Sources */,
+				5DB0D70D17EFB8B90063436F /* main.m in Sources */,
+				5DB0D73D17EFC0CB0063436F /* HybridCar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DB0D71D17EFB8B90063436F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DB0D72F17EFB8B90063436F /* CarValetTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DB0D72717EFB8B90063436F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DB0D6FC17EFB8B90063436F /* CarValet */;
+			targetProxy = 5DB0D72617EFB8B90063436F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5DB0D70917EFB8B90063436F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DB0D70A17EFB8B90063436F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5DB0D71217EFB8B90063436F /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DB0D71317EFB8B90063436F /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		5DB0D71517EFB8B90063436F /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DB0D71617EFB8B90063436F /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		5DB0D72B17EFB8B90063436F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DB0D72C17EFB8B90063436F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DB0D73017EFB8B90063436F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DB0D73117EFB8B90063436F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DB0D73317EFB8B90063436F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CarValet/CarValet-Prefix.pch";
+				INFOPLIST_FILE = "CarValet/CarValet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5DB0D73417EFB8B90063436F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CarValet/CarValet-Prefix.pch";
+				INFOPLIST_FILE = "CarValet/CarValet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5DB0D73617EFB8B90063436F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CarValet.app/CarValet";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CarValet/CarValet-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CarValetTests/CarValetTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5DB0D73717EFB8B90063436F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CarValet.app/CarValet";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CarValet/CarValet-Prefix.pch";
+				INFOPLIST_FILE = "CarValetTests/CarValetTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DB0D6F817EFB8B90063436F /* Build configuration list for PBXProject "CarValet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DB0D73017EFB8B90063436F /* Debug */,
+				5DB0D73117EFB8B90063436F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DB0D73217EFB8B90063436F /* Build configuration list for PBXNativeTarget "CarValet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DB0D73317EFB8B90063436F /* Debug */,
+				5DB0D73417EFB8B90063436F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DB0D73517EFB8B90063436F /* Build configuration list for PBXNativeTarget "CarValetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DB0D73617EFB8B90063436F /* Debug */,
+				5DB0D73717EFB8B90063436F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DB0D6F517EFB8B90063436F /* Project object */;
+}
