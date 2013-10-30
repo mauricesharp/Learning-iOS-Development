@@ -1,0 +1,14 @@
+The text in the final copy of the book requires three updates. Of the three, two
+are minor but one requires a replacement for the Chapter 10 section
+"Searching Tables".
+
+You can get the revised section along with other two updates by registering
+your book. Use the URL below to complete registration. After doing so you will
+be able to download the Companion. The Sample code on GitHub incorporates all
+the changes. Without the Companion, the code from "Searching Tables" will not
+match the Sample code in the repository.
+
+Regards
+Maurice Sharp
+
+http://www.informit.com/store/register.aspx?i=9780321862969
