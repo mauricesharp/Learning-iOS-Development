@@ -179,19 +179,23 @@ titleForHeaderInSection:(NSInteger)section {
 
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
 {
+    NSArray *indexes;
+    
     if (self.carSortControl.selectedSegmentIndex == kCarsTableSortYear) {
-        NSMutableArray *indexes = [NSMutableArray new];
+        NSMutableArray *yearIndexes = [NSMutableArray new];
         
         for (id <NSFetchedResultsSectionInfo> sectionInfo in
              fetchedResultsController.sections) {
-            [indexes insertObject:[sectionInfo name]
-                          atIndex:[indexes count]];
+            [yearIndexes insertObject:[sectionInfo name]
+                              atIndex:[indexes count]];
         }
         
-        return indexes;
+        indexes = [yearIndexes copy];
+    } else {
+        indexes = [fetchedResultsController sectionIndexTitles];
     }
     
-    return [fetchedResultsController sectionIndexTitles];
+    return [@[UITableViewIndexSearch] arrayByAddingObjectsFromArray:indexes];
 }
 
 
@@ -199,6 +203,14 @@ titleForHeaderInSection:(NSInteger)section {
 sectionForSectionIndexTitle:(NSString *)title
                atIndex:(NSInteger)index
 {
+    if (index == 0) {
+        [tableView scrollRectToVisible:self.searchDisplayController.searchBar.frame
+                              animated:YES];
+        
+        return NSNotFound;
+    }
+    
+    index -= 1;
     if (self.carSortControl.selectedSegmentIndex == kCarsTableSortYear) {
         return index;
     }
