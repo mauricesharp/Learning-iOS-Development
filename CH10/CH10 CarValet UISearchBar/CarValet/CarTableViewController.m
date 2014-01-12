@@ -184,19 +184,23 @@ titleForHeaderInSection:(NSInteger)section {
 
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
 {
+    NSArray *indexes;
+    
     if (self.mySearchBar.selectedScopeButtonIndex == kCarsTableSortYear) {
-        NSMutableArray *indexes = [NSMutableArray new];
+        NSMutableArray *yearIndexes = [NSMutableArray new];
         
         for (id <NSFetchedResultsSectionInfo> sectionInfo in
              fetchedResultsController.sections) {
-            [indexes insertObject:[sectionInfo name]
-                          atIndex:[indexes count]];
+            [yearIndexes insertObject:[sectionInfo name]
+                              atIndex:[indexes count]];
         }
         
-        return indexes;
+        indexes = [yearIndexes copy];
+    } else {
+        indexes = [fetchedResultsController sectionIndexTitles];
     }
     
-    return [fetchedResultsController sectionIndexTitles];
+    return [@[UITableViewIndexSearch] arrayByAddingObjectsFromArray:indexes];
 }
 
 
@@ -204,6 +208,14 @@ titleForHeaderInSection:(NSInteger)section {
 sectionForSectionIndexTitle:(NSString *)title
                atIndex:(NSInteger)index
 {
+    if (index == 0) {
+        [tableView scrollRectToVisible:self.mySearchBar.frame animated:YES];
+        
+        return NSNotFound;
+    }
+
+    index -= 1;
+    
     if (self.mySearchBar.selectedScopeButtonIndex == kCarsTableSortYear) {
         return index;
     }
